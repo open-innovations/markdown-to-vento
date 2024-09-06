@@ -1,0 +1,49 @@
+layout: template/page.vto
+
+# Override the site logo colour here. Any CSS colour will work.
+logo_colour: black
+
+# Override the header class here. See https://open-innovations.org/brand for colour classes
+header_class: c5-bg
+
+# Automatically adds meta and social tags 
+# See https://lume.land/plugins/metas/
+metas:
+  site: Markdown to Vento Converter
+  description: A simple tool to convert markdown files to vento with appropriate styling.
+  image: https://open-innovations.org/resources/images/logos/oi-square.png
+  twitter: openinnovates
+  lang: en
+  keywords: [open, data, leeds, innovation]
+
+footer: "<div>
+    <h3>Notes:</h3>
+    <ul>
+        <li>
+            <strong>Front Matter Handling:</strong>
+            <ul>
+                <li>Front matter, marked by <code>---</code>, is included in the output without modification.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Code Block Handling:</strong>
+            <ul>
+                <li>Code blocks are detected by <code> ``` </code> delimiters.</li>
+                <li>Code blocks are wrapped in <code>&lt;pre&gt;&lt;code&gt;</code> tags, preserving their content.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>HTML Tag Detection:</strong>
+            <ul>
+                <li>HTML content is left unchanged and not wrapped in additional tags.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Text Wrapping:</strong>
+            <ul>
+                <li>Non-code, non-HTML, non-front matter text is wrapped in <code>&lt;p&gt;</code> tags.</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+"

@@ -1,0 +1,35 @@
+#drop-area {
+    border: 2px dashed #ccc;
+    background-color: #fff;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+#drop-area.hover {
+    border-color: #333;
+}
+
+#drop-area p {
+    margin: 10px 0;
+}
+
+#download-link {
+    display: none; /* Initially hidden */
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    background-color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    border: 0.1rem solid #ccc;
+    cursor: pointer;
+}
+
+#download-link:hover {
+    background-color: #e0e0e0;
+}
+#fileElem {
+    margin-bottom: 1rem;
+}
