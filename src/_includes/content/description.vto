@@ -1,0 +1,18 @@
+<h3>Why?</h3>
+<p>
+    This tool was born from recent work on our <a href="https://open-innovations.github.io/housing/">housing site</a> where we started
+    <a href="https://open-innovations.github.io/housing/data/explorations/">documenting some of our code</a> using 
+    jupyter notebooks. In summary:
+    <ul>
+        <li>If you have a <code>jupyter notebook</code> and you want to put it on a <code><a href="/">Lume</a></code> site, you need to convert it to a format <code>Lume</code> knows about.</li>
+        <li>You can automatically convert notebooks to <code>markdown</code> with <code>jupyter <a href="https://nbconvert.readthedocs.io/en/latest/usage.html">nbconvert</a></code>. </li> 
+        <li>However, if you then want to include other elements like <code><a href="https://open-innovations.github.io/oi-lume-viz/samples/">OI Lume charts</a></code> or parts of other pages using <code>{{ "{{ includes }}" |> escape }}</code> tags, you need a <code><a href="https://vento.js.org/">.vento</a></code> (or <code>.njk</code>) file.</li>
+        <li>This tool converts the <code>markdown</code> format to <code>vento</code>, preserving things like front matter, and various <code>HTML</code> tags. It adds <code>{{ "<p>" |> escape }}</code> tags to sentences and formats any code blocks correctly so that they can be styled using the <code><a href="https://lume.land/plugins/prism/">prism</a></code> plugin. </li>
+    </ul>
+</p>
+<h3>How to use:</h3>
+<p>
+    First, convert your notebook using the command line: <code>jupyter nbconvert your_notebok.ipynb --to markdown</code>.
+    The output will be saved in your current working directory. Then use this tool to convert the markdown to vento.
+</p>
+

@@ -1,20 +1,9 @@
 ---
-title: Markdown to Vento Converter
+title: 
 ---
-<p>
-    On our <a href="https://open-innovations.github.io/housing/">housing site</a> we recently started 
-    <a href="https://open-innovations.github.io/housing/data/explorations/">documenting some of our code</a> using 
-    jupyter notebooks. It's easy to convert these to markdown format using <code>jupyter nbconvert</code>, and Lume 
-    supports markdown as a template format. This worked fine until we wanted to put <a href="https://open-innovations.github.io/oi-lume-viz/samples/">
-    OI Lume charts</a> onto those pages as well. At this point, we needed to convert the files to Vento to allow us to load 
-    the charts and maintain the styling for the code blocks. This was a tedious manual process, so we made a tool to do it for us. 
-    This programme runs in the browser - nothing ever leaves your computer.
-</p>
-<p>
-    First, convert your notebook using the command line: <code>jupyter nbconvert your_notebok.ipynb --to markdown</code>.
-    The output will be saved in your current working directory. <a href="https://nbconvert.readthedocs.io/en/latest/usage.html">Read the docs</a>
-     for more detailed info. Then use this tool to convert the markdown to vento.
-</p>
+
+{{ include 'content/description.vto' }}
+
 <div id="drop-area">
     <p>Drop a markdown file here</p>
     <p>or</p>
@@ -22,5 +11,5 @@ title: Markdown to Vento Converter
 </div>
 
 <p class="padded"><a id="download-link" download="converted.vto">Download Converted File</a></p>
-
+<p class='warning padded centred'>This programme runs in the browser - nothing ever leaves your computer.</p>
 <script src="/assets/js/app.js"></script>
